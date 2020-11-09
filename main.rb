@@ -1,3 +1,4 @@
 require "./game"
 
-Game.new().play
+game = Game.new()
+game.play

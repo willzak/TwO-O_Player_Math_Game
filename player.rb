@@ -1,7 +1,8 @@
 class Player
-  attr_accessor :lives
+  attr_accessor :lives, :name
 
-  def initialize
+  def initialize(name)
+    @name = name
     @lives = 3
   end
 
@@ -11,5 +12,9 @@ class Player
 
   def self.lives
     puts "#{@lives} / 3"
+  end
+
+  def self.name
+    puts "#{@name}"
   end
 end
